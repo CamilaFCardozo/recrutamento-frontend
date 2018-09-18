@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Heróes da Marvel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      
+    }
+    .jumbotron{
+    	background-color:#8A0808;
+    	padding: 25px;
+
+    }
+    .container{
+    	background-color:#000000;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      color: white;
+      background-color:#8A0808;
+      padding: 7px;
+    }
+    .modal h5,h3{
+    	color : #8A0808;
+    	font-size: 25px;
+    	font-weight: bold;
+
+    }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Heróis da Marvel</a>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+  	<img src="img/marvel.jpg" style="width:100%"  alt="Image">    
+  </div>
+</div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" id="search" class="form-control" placeholder="Procure seu herói" / >
+        </div>
+      <!--   
+			# MELHORIAS FUTURAS
+            <div class="col-md-8">
+            	<div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="all" class="btn btn-success">All</button>
+                <button type="button" id="vingadores" class="btn btn-success">Vingadores</button>
+                <button type="button" id="guardioes" class="btn btn-success">Guardiões</button>
+           		<button type="button" id="xmen" class="btn btn-success">X-men</button>  -->
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row" id="parent">
+        <div class="col-md-2 box vingadores">
+            <center>
+                <img src="img/homem_de_ferro.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image" data-toggle="modal" data-target="#ModalLongIronMan">
+				
+				<!-- Modal -->
+
+				<div class="modal fade" id="ModalLongIronMan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Homem de Ferro</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<div class="row">
+							<div class="col-md-6">
+							  <img class = "img-fluid" src="img/homem_de_ferro2.jpg" alt="" width="100%" height="100%">
+							</div>
+							<div class="col-md-6">
+							  <p align="justify">Tony Stark, durante a apresentação de um novo armamento o comboio em que ele viajava sofre um ataque, e ele é atingido acidentalmente por um estilhaço de granada no peito. 
+							  Sendo feito prisioneiro pelo líder rebelde Wong Chu logo depois. Durante o periodo em que esteve preso ele conhece então Ho Yinsen, físico vencedor do Prêmio Nobel, também aprisionado, que o ajuda na construção de um exoesqueleto fortemente armado e também projeta a famosa placa usada por Stark no peito para manter seu coração protegido dos estilhaços. Entretanto, durante a fuga do cativeiro, Yinsen dá a própria vida para salvar Tony. De volta aos EUA, Stark redesenha o traje, cria o Homem de Ferro e inventa a história de que ele era apenas seu guarda-costas (fato pouco aproveitado no filme), e inicia um vida dupla como playboy e herói. É um dos membros fundadores da equipe dos Vingadores e "patrocinador" da equipe.</p>         
+							</div>
+						</div>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+                <p class="name">Homem de Ferro</p>
+            </center>
+        </div>
+        <div class="col-md-2 box vingadores">
+            <center>
+                <img src="img/capitao_america.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image" data-toggle="modal" data-target="#ModalLongCaptainAmerica">
+				
+				<!-- Modal -->
+
+				<div class="modal fade" id="ModalLongCaptainAmerica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Capitão America</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<div class="row">
+							<div class="col-md-6">
+							  <img class = "img-fluid" src="img/capitao_america2.jpg" alt="" width="100%" height="100%">
+							</div>
+							<div class="col-md-6">
+							  <p align="justify">Steve Rogers era um rapaz com problemas de saúde que desejava, de qualquer forma, participar dos esforços estadunidenses para vencer a Segunda Guerra Mundial. Ao ter seu alistamento recusado por sua saúde debilitada, ele deixa claro estar disposto a fazer qualquer coisa para ajudar na guerra. Esse "qualquer coisa" é tão literal que ele se torna parte do "projeto supersoldado", que consistia em um soro especial e criado pelo Dr. Josef Reinstein. Contudo, na equipe do projeto havia Heinz Kruger, um agente duplo a serviço dos nazistas, que mata Erskine. Como isso fórmula se perdeu e Steve Rogers acaba se tornando o único daquilo que deveria ser um exército de supersoldados.
+							  Devido ao desfecho de sua ultima batlha o herói passa decadas congelado em um estado de morte aparente. Após seu despertar 70 anos Rogers tenta voltar a vida civil mais novas ameaças fazem com que ele retorne como o líder dos Vingadores.</p>         
+							</div>
+						</div>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+                <p class="name">Capitão America</p>
+            </center>
+        </div>
+
+        <div class="col-md-2 box vingadores">
+            <center>
+                <img src="img/thor.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image"data-toggle="modal" data-target="#ModalLongThor">
+
+			   <!-- Modal -->
+
+				<div class="modal fade" id="ModalLongThor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Thor</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<div class="row">
+							<div class="col-md-6">
+							  <img class = "img-fluid" src="img/thor2.jpg" alt="" width="100%" height="100%">
+							</div>
+							<div class="col-md-6">
+							  <p align="justify">Filho de Odin, o deus supremo de Asgard. Thor o Deus do Trovão em sua juventude tinha comportamento arrogante e impulsivo e, em uma de suas aventuras, cometeu uma grave falta invadindo o reino dos Gigantes de Gelo e violando o tratado estabelecido por Odin. Para punir o filho Odin bane Thor para Terra sem seus poderes, com o tempo ele aprende a lição e permanece atuando como ativo herói na Terra.
+							  Ele tambem foi um dos fundadores dos Vingadores ao lado do Homem de Ferro e Capitão America entre outros heróis. Permanecendo na equipe por muitos anos, Thor se envolveu em inúmeras batalhas para defender os seres humanos, sendo mundialmente reconhecido como um herói de grande valor.</p>         
+							</div>
+						</div>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<p class="name">Thor</p>
+            </center>
+        </div>
+
+        <div class="col-md-2 box vingadores">
+            <center>
+                <img src="img/hulk.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image"data-toggle="modal" data-target="#ModalLongHulk">
+
+			    <!-- Modal -->
+
+				<div class="modal fade" id="ModalLongHulk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Hulk</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<div class="row">
+							<div class="col-md-6">
+							  <img class = "img-fluid" src="img/hulk2.jpg" alt="" width="100%" height="100%">
+							</div>
+							<div class="col-md-6">
+							  <p align="justify">A história do Hulk começa quando o físico nuclear Bruce Banner vai testar sua bomba Gama para o exército. Quando o jovem Rick Jones, entra na área de testes, para impedir o pior o bom doutor corre em sua direção para salvá-lo, e consegue atirar o garoto numa vala para tentando protege-lo da radiação. Apesar de salvar o garoto Banner é atingido pela explosão, porem milagrosamente ele sobrevive aparentemente ileso. Mais tarde, naquela noite, a radiação os efeitos da exposição a radiação começam a aparecer e o transforma numa criatura imensa e violenta.
+							  O Hulk não era o tipo de herói comum e muitas vezes é temido como um monstro que só se punha a realizar façanhas heróicas quando é direta ou indiretamente envolvido nelas. 
+							  Hulk tambem integra os vingadores e talvez seja o mais forte membro da equipe.</p>         
+							</div>
+						</div>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+                <p class="name">Hulk</p>
+            </center>
+        </div>
+
+        <div class="col-md-2 box vingadores">
+                <center>
+                    <img src="img/viuva_negra.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image"data-toggle="modal" data-target="#ModalLongBlackWidow">
+
+				   <!-- Modal -->
+
+					<div class="modal fade" id="ModalLongBlackWidow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Viúva Negra</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+								  <img class = "img-fluid" src="img/viuva_negra2.jpg" alt="" width="100%" height="100%">
+								</div>
+								<div class="col-md-6">
+								  <p align="justify"> Viúva Negra, codinome da super espiã russa Natasha Romanoff,ela possui uma das histórias mais complexas de todos os heróis, pois existem inumeras versões. Há histórias sugerem que ela nasceu em 1928, tornando-se órfã durante a Segunda Guerra Mundial, após um a Stalingrado, onde sua mãe faleceu após atirar a garota pela janela de um predio em chamas para o soldado russo Ivan Petrovitch que a criou como pai adotivo. Outra versão da história conta que Natasha não foi criada apenas por Ivan Petrovitch, pois desde muito cedo já fazia parte do Projeto Viúva Negra da União Soviética, que buscava criar a espiã mais mortal do mundo.
+								  Quando ficou um pouco mais velha, Ivan levou Natasha e outras 28 garotas órfãs a fim de serem treinadas em combate e espionagem na “Sala Vermelha”, uma instalação secreta do Departamento X. Onde as garotas foram biologica e psicologicamente aprimoradas, o que explica o não invelhecimento de Natasha e suas habilidades. Romanoff começou sua história como uma vilã, mais ganhou notoriedade como uma das principais heroínas dos vingadores.</p>         
+								</div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+                    <p class="name">Viúva Negra</p>
+                </center>
+		</div>
+			
+		<div class="col-md-2 box vingadores">
+                <center>
+                    <img src="img/gaviao_arqueiro.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image" data-toggle="modal" data-target="#ModalLongHawkeye">
+
+				    <!-- Modal -->
+
+					<div class="modal fade" id="ModalLongHawkeye" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Gavião Arqueiro</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+								  <img class = "img-fluid" src="img/gaviao_arqueiro2.jpg" alt="" width="100%" height="100%">
+								</div>
+								<div class="col-md-6">
+								  <p align="justify">Clinton Barton era o mais novo dos dois filhos de um pequeno indutrial.
+									Quando seus pais foram mortos em um acidente de automóvel, ele tinha apenas oito anos de idade e juntamente com seu irmão foi colocado em um orfanato.
+									Ao completar catorze anos, ele e seu irmão, Barney, fugiram da instituição para ingressar em um circo. Lá Clint, tornou-se aprendiz do maior astro do espetáculo, o misterioso Espadachim. 
+
+									Clint tornou-se um habilidoso arqueiro de circo, até que viu o Homem de Ferro em ação. Achando que também podia ser um herói, ele fez um uniforme e iniciou uma ronda pela cidade. Mas, para seu azar, em sua primeira missão após capiturar um ladrão, foi confundido com membro de quadrilha pelos policiais. Ele foi salvo dos tiras pela Viúva Negra (sua namorada naquela época), que o recrutou para luta contra o Homem de Ferro. Com o passar do tempo, o Gavião deixou a vida de crimes, limpou seu nome e passou a lutar ao lado dos Vingadores.</p>         
+								</div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+                    <p class="name">Gavião Arqueiro</p>
+                </center>
+        	</div>
+        </div>
+
+		
+	<div class="row" id="parent">	
+		<div class="col-md-2 box guardioes">
+                <center>
+                     <img src="img/peter_quill.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image" data-toggle="modal" data-target="#ModalLongStarLord">
+
+					<!-- Modal -->
+
+					<div class="modal fade" id="ModalLongStarLord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Peter Quill</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+								  <img class = "img-fluid" src="img/peter_quill2.jpg" alt="" width="100%" height="100%">
+								</div>
+								<div class="col-md-6">
+								  <p align="justify">Peter Quill, também conhecido como Senhor das Estrelas é filho de uma humana e um celestial, e sua fisiologia hibrida fornece a ele habilidades no sobre humano. O que dá a ele algumas habilidades especiais. Suas história se inicia em 1988, quando Quill era um menino no Missouri e incapaz de aceitar a morte de sua mãe devido ao câncer, ele sai do hospital em lágrimas e é posteriormente abduzido por uma nave extraterrestre. Vinte e seis anos depois, ele é um membro do Ravagers, a brigada mercenária que o abduziu quando criança e teve muitas aventuras com essa equipe ao redor da galáxia. Enquanto está em um trabalho, Peter encontra-se envolvido em uma luta de poder entre o Kree Ronan O Acusador e a Tropa Nova de Xandar, enquanto é perseguido por Yondu lider dos Ravagers, por ter roubado um Orbe, que na verdade continha o poder da Joia do infinito que Ronan procurava para destruir Xandar.</p>        
+								</div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+                    <p class="name">Peter Quill</p>
+                </center>
+        </div>
+		<div class="col-md-2 box guardioes">
+                <center>
+                    <img src="img/gamora.jpg" class="img-responsive" style="width:150px" style="height:90px" alt="Image" data-toggle="modal" data-target="#ModalLongGamora">
+
+
+				    <!-- Modal -->
+
+					<div class="modal fade" id="ModalLongGamora" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Gamora</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+								  <img class = "img-fluid" src="img/gamora2.jpg" alt="" width="100%" height="100%">
+								</div>
+								<div class="col-md-6">
+								  <p align="justify">Gamora é a última sobrevivente dos Zen Whoberi. A pequena órfã foi encontrada por Thanos, que adotou a garota. O Titã Louco decidiu transformar Gamora em uma assassina, buscando usar-la como arma contra Magus, seu grande inimigo. Com o seu treinamento em artes marciais e melhorias cibernéticas concebidas por Thanos, Gamora se tornou conhecida como a “Mulher mais perigosa do Universo”. Como foi salva e criada pelo Titã Louco, Gamora desconhecia quem ele realmente era. O grande vilão que todos conhecem era algo que a guerreira simplesmente não conseguia enxergar. Mas isso não era culpa sua.
+								  Quando Gamora foi ciberneticamente modificada por Thanos, ele também alterou sua percepção para que ela nunca visse o quão malvado ele era. Mas quando Thanos revelou seu lado mais negro, Gamora começou a ver quem realmente ele era. Quando a guerreira descobriu que Thanos planejava cometer genocídio galáctico, Gamora se revoltou contra o pai.</p>        
+								</div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+                    <p class="name">Gamora</p>
+                </center>
+        </div>
+		<div class="col-md-2 box guardioes">
+                <center>
+                    <img src="img/drax.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image" data-toggle="modal" data-target="#ModalLongDrax">
+
+				    <!-- Modal -->
+
+					<div class="modal fade" id="ModalLongDrax" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Drax</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+								  <img class = "img-fluid" src="img/drax2.jpg" alt="" width="100%" height="100%">
+								</div>
+								<div class="col-md-6">
+								  <p align="justify">Drax O Destruidor é uma máquina de violência que não entende as nuances da linguagem e é singularmente focado em um objetivo: vingar a morte da sua família, assassinada por Ronan. Depois de tentar matar Gamora em uma tentativa de ferir Ronan, ele acaba se juntando a Peter, Rocket, Groot e a propria Gamora para fugir da nave prisão em que estão, a convivencia a principio é complicada, mais com o tempo eles se entendem e acabam se tornando uma amigos.</p>        
+								</div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+                    <p class="name">Drax</p>
+                </center>
+        </div>
+		<div class="col-md-2 box guardioes">
+                <center>
+					<img src="img/rocket.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image" data-toggle="modal" data-target="#ModalLongRocket">	
+				   <!-- Modal -->
+
+					<div class="modal fade" id="ModalLongRocket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Rocket</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+								  <img class = "img-fluid" src="img/rocket2.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="col-md-6">
+								  <p align="justify">Rocket Raccoon é um guaxinim antropomórfico inteligente, atirador habilidoso e grande estrategista, sua fisiologia de Guaxinim lhe dá habilidades acima das habilidades humanas como um grande estrategista. Seu nome e aspectos são um aceno para a canção "Rocky Raccoon" dos Beatles de 1968, Rocket é sarcastico e cruel, e também muito habilidoso no uso de armas. Foi o responsavel por elaborar o plano de fuga da prisão que liberto Peter, Gamora, Drax, Groot e a ele proprio.</p>        
+								</div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+                    <p class="name">Rocket</p>
+                </center>
+        </div>
+		<div class="col-md-2 box guardioes">
+                <center>
+                   <img src="img/groot.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image" data-toggle="modal" data-target="#ModalLongGroot">
+
+				   <!-- Modal -->
+
+					<div class="modal fade" id="ModalLongGroot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Groot</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+								  <img class = "img-fluid" src="img/groot2.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="col-md-6">
+								  <p align="justify">Groot pertence a raça Floral Colossus. É devido a uma condição na sua laringe que Groot não consegue dizer nada alem de EU SOU GROOT. Embora poucos o entendam, Groot diz muitas coisas diferentes na sua declaração sempre igual. É preciso haja alguém que o consiga interpretar, como o fiel Rocket. Groot possui o poder da regeneração, precisando apenas de um galho para voltar a renascer. Isso faz com que ele tenha uma certa tendência para se lançar em missões suicidas, desde que tenha Rocket do seu lado. O seu melhor amigo já cuidou de o fazer crescer novamente em um vaso que levava com ele para todo o lado.
+
+								  E também possui poderes mentais que afetam unicamente as plantas, conseguindo se comunicar com elas e até comandar para agirem como ele quer. Ele consegue ainda cortar partes de si para que renasçam como outras plantas que ele controla, o seu tamanho gigante aliado à sua superforça fazem dele um tanque poderoso para qualquer ataque.
+								  .</p>        
+								</div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+                    <p class="name">Groot</p>
+                </center>
+        </div>
+		<div class="col-md-2 box guardioes">
+                <center>
+                    <img src="img/mantis.jpg" class="img-responsive" style="width:150px" style="height:80px" alt="Image" data-toggle="modal" data-target="#ModalLongMantis">
+
+				    <!-- Modal -->
+
+					<div class="modal fade" id="ModalLongMantis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Mantis</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+								  <img class = "img-fluid" src="img/mantis2.png" alt="" width="100%" height="100%">
+								</div>
+								<div class="col-md-6">
+								  <p align="justify">Mantis é uma jovem empática que foi criada pelo ego e recrutada como membro dos Guardiões da Galáxia . Desde criança, Mantis ajudou Ego com seus poderes até que os Guardiões chegaram ao planeta do ego. Ela se aliou a eles impedindo Ego de conquistar a galáxia.
+								  Entre seus poderes estão a empatia, indução ao sono e despertar induzido. Apesar de parecer fragil possui uma resistência superior a dos humanos.</p>        
+								</div>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+                    <p class="name">Mantis</p>
+                </center>
+        </div>
+    </div><!-- /row -->
+	</div>
+
+    <br /><br /><br /><br /><br /><br />
+
+
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="filter.js"></script>
+
+<footer class="container-fluid text-center">
+  <p>Todos os direitos reservados.</p>
+</footer>
+</body>
+
+</html>
